@@ -1,0 +1,55 @@
+body {
+	color: darkslategray;
+	font-family: cursive;
+	max-width: 650px;
+	margin: 0 auto;
+    padding: 0 16px;
+ 
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main-content {
+	flex-grow: 1;
+}
+
+header {
+	margin-top: 16px;
+	margin-bottom: 48px;
+}
+
+h1 {
+	font-size: 54px;
+	margin-bottom: 16px;
+}
+
+header a {
+	color: darkgray;
+	margin-right: 16px;
+	text-decoration: none;
+}
+
+.saket, .mead {
+	width: 250px;
+}
+
+footer {
+	color: gainsboro;
+	border-top: 2px solid lightslategray;
+	margin-top: 16px;
+	padding: 16px 0;
+}
+
+input {
+    border: 1px solid lightgray;
+	padding: 8px;
+}
+
+button {
+   cursor: pointer;
+   border: 1px solid darkgray;
+   background: darkgray;
+   color: white;
+   padding: 8px;
+}
