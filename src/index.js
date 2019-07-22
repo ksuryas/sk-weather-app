@@ -12,7 +12,7 @@ const app = express();
 
 var errorMessage = 'Page not found'; 
 
-var port = 3000;
+const port = process.env.PORT || 3000;
 
 // define paths for express config
 const publicPath = path.join(__dirname, '../public');
