@@ -2,8 +2,7 @@ const forecastForm = document.querySelector('form');
 const search = document.querySelector('input');
 const messageOne = document.querySelector('#message-1');
 const messageTwo = document.querySelector('#message-2');
-const log = console.log;
-log('Client side JS File loaded');
+
 // addEventListener starts
 forecastForm.addEventListener('submit', (e) => { 
 	e.preventDefault();
