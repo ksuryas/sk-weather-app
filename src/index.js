@@ -28,7 +28,7 @@ app.use(express.static(publicPath));
 // home page
 app.get('/', (req, res) => {
 	res.render('welcome', {
-		title: "Welcome to Surya Saket's Weather App!",
+		title: "Welcome to Surya's Weather App!",
 		name: 'Surya K.'
 	});
 });
