@@ -4,8 +4,8 @@ body {
 	font-family: cursive;
 	max-width: 650px;
 	margin: 0 auto;
-    padding: 0 16px;
-		
+	padding: 0 16px;
+
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -21,13 +21,19 @@ header {
 }
 
 h1 {
+	color: darkblue;
 	margin-bottom: 16px;
 }
+
 h3 {
-  font-weight: bold;
+	font-weight: bold;
+}
+h4, #text {
+	color: black;
+	font-weight: normal;
 }
 header a {
-	color: darkgray;
+	color: white;
 	margin-right: 16px;
 	text-decoration: none;
 }
@@ -44,25 +50,30 @@ footer {
 }
 
 input {
-    border: 1px solid lightgray;
+	border: 1px solid lightgray;
 	padding: 8px;
 }
 
 button {
-   cursor: pointer;
-   border: 1px solid darkgray;
-   background: darkgray;
-   color: white;
-   padding: 8px;
+	cursor: pointer;
+	border: 1px solid darkgray;
+	background: black;
+	color: white;
+	padding: 8px;
 }
 
 @media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  body {
-    font-size: 68px;
-  }
+	/* For mobile phones: */
+	body {
+		font-size: 60px;
+	}
 	header a {
-	   font-size: 68px;
+		font-size: 68px;
 		text-decoration: none;
+	}
+
+	input {
+		border: 1.5px solid lightgray;
+		padding: 8px;
 	}
 }

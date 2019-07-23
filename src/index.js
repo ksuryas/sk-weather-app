@@ -28,14 +28,14 @@ app.use(express.static(publicPath));
 // home page
 app.get('/', (req, res) => {
 	res.render('welcome', {
-		title: 'Welcome to Saket Weather App!',
-		name: 'Surya'
+		title: "Welcome to Surya Saket's Weather App!",
+		name: 'Surya K.'
 	});
 });
 app.get('/aboutUs', (req, res) => { // aboutUs
 	res.render('aboutUs', {
 		title: 'Weather App About',
-		name: 'Surya K. & Andrew Mead'
+		name: 'Surya K.'
 	});
 });
 // weather starts
@@ -71,9 +71,8 @@ app.get('/weather', (req, res) => {
 		}); // weather ends
 app.get('/help', (req, res) => { // help
 			res.render('help', {
-				app: 'Go to home page & give location in the field. Then our server will tell you weather forecast.',
 				title: 'Weather Help',
-				name: 'Surya'
+				name: 'Surya K.'
 			});
 		});
 
