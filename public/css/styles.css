@@ -71,7 +71,9 @@ button {
 		font-size: 68px;
 		text-decoration: none;
 	}
-
+	header {
+	  font-size: 62px;
+	}
 	input {
 		border: 1.5px solid lightgray;
 		padding: 8px;
