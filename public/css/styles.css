@@ -5,7 +5,7 @@ body {
 	max-width: 650px;
 	margin: 0 auto;
     padding: 0 16px;
- 
+		
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -21,7 +21,6 @@ header {
 }
 
 h1 {
-	font-size: 54px;
 	margin-bottom: 16px;
 }
 h3 {
@@ -55,4 +54,15 @@ button {
    background: darkgray;
    color: white;
    padding: 8px;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  body {
+    font-size: 68px;
+  }
+	header a {
+	   font-size: 68px;
+		text-decoration: none;
+	}
 }
