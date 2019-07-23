@@ -66,14 +66,14 @@ button {
 @media only screen and (max-width:620px) {
 	/* For mobile phones: */
 	.main-content-about, body {
-		         font-size: 60px;
+		  font-size: 20px;
 	}
 	header a {
-		font-size: 68px;
+		font-size: 20px;
 		text-decoration: none;
 	}
 	header {
-	  font-size: 62px;
+	  font-size: 20px;
 	}
 	input, button {
 		border: 1.5px solid lightgray;
@@ -84,5 +84,5 @@ button {
 		margin-top: 8px;
 		color: darkblue;
 		margin-bottom: 16px;
-}
+   }
 }
