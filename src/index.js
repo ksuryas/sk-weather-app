@@ -10,7 +10,7 @@ const forecast = require('./utils/forecast.js');
 
 const app = express();
 
-var errorMessage = 'Page not found'; 
+var errorMessage = 'Page not found';
 
 const port = process.env.PORT || 3000;
 
@@ -41,23 +41,32 @@ app.get('/aboutUs', (req, res) => { // aboutUs
 // weather starts
 app.get('/weather', (req, res) => {
 			if (!req.query.address) { // if starts
-				return res.send({ // response sends
-					code: 400,
+				return res.send({ // response send starts
+					code: 500,
 					error: 'Bad request! Must provide address.'
 				}); // response ends
+			   
 			} // if ends
+/*	    else if(req.query.forecast === 'undefined:undefined') {
+				return res.send({ // response send starts
+					code: 500,
+					error: 'Bad request. Invalid address!'
+				});
+		} */
 			geocode(req.query.address, (error, {latitude, longitude, location} = {}) => { 
                // geocode starts
 				if (error) { // if starts
 					return res.send({ // response starts
-						geocodeError: error
+						code: 500,
+						error
 					}); // response ends
 				} // if ends
 
 				forecast(latitude, longitude, (error, forecast) => { // forecast starts
 					if (error) { // if starts
 						return res.send({
-							forecastError: error
+							code: 500,
+							error
 						}); // response ends
 					} // if ends
 					res.send({ // response starts

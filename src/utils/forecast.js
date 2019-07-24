@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
 			var temp = body.currently.temperature;
 			var precip = body.currently.precipProbability;
 			var daily = body.daily.data[0].summary;
-			callback(undefined, daily + ' It is currently ' + temp + ' degrees faranheit out. There is ' + precip + '% chance of rain.');
+			callback(undefined, daily + ' It is currently ' + temp + ' degrees fahrenheit. There is ' + precip + '% chance of rain.');
 		}
 	});
 };
